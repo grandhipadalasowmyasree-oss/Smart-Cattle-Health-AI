@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AICW - Artificial Intelligence Career for Women</title>
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100%;
+      min-height: 100%;
+      background: #FFFFFF !important;
+      font-family: 'Poppins', sans-serif !important;
+      color: #263238;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-color: #FFFFFF !important;
+    }
+
+    .aicw-page {
+      width: 100%;
+      min-height: 100vh;
+      background: #FFFFFF;
+      font-family: 'Poppins', sans-serif;
+    }
+
+
+    /* =====================================================
+       NAVBAR
+    ===================================================== */
+
+    .aicw-navbar {
+      width: 100%;
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 5%;
+      background: #FFFFFF;
+      border-bottom: 1px solid #E8F0EA;
+      box-shadow: 0 2px 12px rgba(27, 94, 32, 0.06);
+      position: relative;
+      z-index: 20;
+    }
+
+    .aicw-brand {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+      text-decoration: none;
+    }
+
+    .aicw-logo {
+      color: #1B5E20;
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .aicw-brand-name {
+      margin-top: 3px;
+      color: #2E7D32;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .aicw-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 27px;
+    }
+
+    .aicw-nav a {
+      position: relative;
+      padding: 8px 0;
+      text-decoration: none;
+    }
+
+    .aicw-nav a img {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      display: block;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero-wrapper {
+      width: 100%;
+      background: #FFFFFF;
+      padding: 28px 4% 0;
+    }
+
+    .hero {
+
+      position: relative;
+
+      width: 100%;
+      max-width: 1280px;
+
+      min-height: 560px;
+
+      margin: 0 auto;
+
+      overflow: hidden;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #E8F5E9 0%,
+          #F7FBF7 55%,
+          #FFFFFF 100%
+        );
+
+      box-shadow:
+        0 12px 35px rgba(27, 94, 32, 0.13);
+
+      display: flex;
+      align-items: center;
+    }
+
+
+    /* =====================================================
+       HERO CONTENT
+    ===================================================== */
+
+    .hero-content {
+
+      width: 50%;
+
+      padding-left: 7%;
+
+      color: #123C2A;
+
+      z-index: 2;
+    }
+
+    .hero-brand {
+
+      display: inline-block;
+
+      margin-bottom: 12px;
+
+      color: #C89120;
+
+      font-size: 18px;
+
+      font-weight: 700;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+    }
+
+    .hero-brand-name {
+
+      margin-bottom: 18px;
+
+      color: #2E7D32;
+
+      font-size: 15px;
+
+      font-weight: 600;
+
+      letter-spacing: 1px;
+    }
+
+    .hero-title {
+
+      margin: 0;
+
+      color: #123C2A;
+
+      font-size: clamp(34px, 4.5vw, 58px);
+
+      line-height: 1.12;
+
+      font-weight: 800;
+
+      letter-spacing: -1px;
+    }
+
+    .hero-description {
+
+      max-width: 620px;
+
+      margin: 22px 0 28px;
+
+      color: #455A64;
+
+      font-size: 16px;
+
+      line-height: 1.8;
+
+      font-weight: 400;
+    }
+
+    .hero-button {
+
+      display: inline-block;
+
+      padding: 13px 25px;
+
+      border-radius: 8px;
+
+      background: #1B5E20;
+
+      color: #FFFFFF;
+
+      text-decoration: none;
+
+      font-size: 14px;
+
+      font-weight: 600;
+
+      transition: all 0.25s ease;
+
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .hero-button:hover {
+
+      background: #2E7D32;
+
+      transform: translateY(-2px);
+    }
+
+
+    /* =====================================================
+       FIVE HOME IMAGES
+    ===================================================== */
+
+    .hero-image-area {
+
+      width: 50%;
+
+      padding: 40px 5% 40px 20px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+    }
+
+    .hero-image-grid {
+
+      width: 100%;
+
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 18px;
+
+      align-items: center;
+    }
+
+    .home-image-card {
+
+      background: #FFFFFF;
+
+      border: 1px solid #E1ECE3;
+
+      border-radius: 18px;
+
+      padding: 18px;
+
+      min-height: 150px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      box-shadow:
+        0 8px 24px rgba(27, 94, 32, 0.09);
+
+      transition: all 0.25s ease;
+    }
+
+    .home-image-card:hover {
+
+      transform: translateY(-5px);
+
+      box-shadow:
+        0 14px 30px rgba(27, 94, 32, 0.14);
+    }
+
+    .home-image-card img {
+
+      width: 100%;
+
+      height: 110px;
+
+      object-fit: contain;
+
+      display: block;
+    }
+
+    .home-image-card.fifth {
+
+      grid-column: 1 / 3;
+
+      min-height: 125px;
+    }
+
+    .home-image-card.fifth img {
+
+      height: 90px;
+    }
+
+
+    /* =====================================================
+       WHITE CONTENT AREA
+    ===================================================== */
+
+    .content {
+
+      width: 100%;
+
+      max-width: 1100px;
+
+      margin: 0 auto;
+
+      padding: 70px 25px 60px;
+
+      background: #FFFFFF;
+    }
+
+    .section {
+
+      width: 100%;
+
+      margin-bottom: 65px;
+
+      text-align: center;
+    }
+
+    .section-label {
+
+      margin-bottom: 8px;
+
+      color: #D5A23A;
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      letter-spacing: 1.5px;
+
+      text-transform: uppercase;
+    }
+
+    .section-title {
+
+      margin: 0 0 16px;
+
+      color: #1B5E20;
+
+      font-size: 30px;
+
+      font-weight: 700;
+    }
+
+    .section-text {
+
+      max-width: 820px;
+
+      margin: 0 auto;
+
+      color: #455A64;
+
+      font-size: 15px;
+
+      line-height: 1.9;
+
+      font-weight: 400;
+    }
+
+
+    /* =====================================================
+       CAPABILITY CARDS
+    ===================================================== */
+
+    .cards {
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 24px;
+
+      margin-top: 35px;
+    }
+
+    .card {
+
+      padding: 28px 22px;
+
+      background: #FFFFFF;
+
+      border: 1px solid #E2ECE4;
+
+      border-radius: 15px;
+
+      box-shadow: 0 7px 22px rgba(27, 94, 32, 0.07);
+
+      text-align: center;
+
+      transition: all 0.25s ease;
+    }
+
+    .card:hover {
+
+      transform: translateY(-5px);
+
+      box-shadow: 0 12px 28px rgba(27, 94, 32, 0.12);
+    }
+
+    .card-icon {
+
+      margin-bottom: 12px;
+
+      font-size: 34px;
+    }
+
+    .card-title {
+
+      margin-bottom: 9px;
+
+      color: #1B5E20;
+
+      font-size: 18px;
+
+      font-weight: 600;
+    }
+
+    .card-text {
+
+      color: #546E7A;
+
+      font-size: 14px;
+
+      line-height: 1.7;
+
+      font-weight: 400;
+    }
+
+
+    /* =====================================================
+       TEAM + GUIDE
+    ===================================================== */
+
+    .team-guide {
+
+      display: grid;
+
+      grid-template-columns: 1.2fr 0.8fr;
+
+      gap: 28px;
+
+      margin-top: 35px;
+    }
+
+    .people-card {
+
+      padding: 32px;
+
+      background: #FFFFFF;
+
+      border: 1px solid #E2ECE4;
+
+      border-radius: 16px;
+
+      box-shadow: 0 7px 22px rgba(27, 94, 32, 0.07);
+
+      text-align: left;
+    }
+
+    .people-card h3 {
+
+      margin: 0 0 22px;
+
+      color: #1B5E20;
+
+      font-size: 21px;
+
+      font-weight: 700;
+    }
+
+    .member {
+
+      padding: 12px 0;
+
+      border-bottom: 1px solid #EDF2EE;
+
+      color: #263238;
+
+      font-size: 16px;
+
+      font-weight: 500;
+    }
+
+    .member:last-child {
+
+      border-bottom: none;
+    }
+
+    .guide-name {
+
+      margin-top: 20px;
+
+      color: #1B5E20;
+
+      font-size: 25px;
+
+      font-weight: 700;
+    }
+
+    .guide-role {
+
+      margin-top: 7px;
+
+      color: #607D8B;
+
+      font-size: 14px;
+
+      font-weight: 400;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer {
+
+      padding: 25px;
+
+      text-align: center;
+
+      background: #FFFFFF;
+
+      border-top: 1px solid #E8F0EA;
+
+      color: #607D8B;
+
+      font-size: 13px;
+    }
+
+
+    /* =====================================================
+       RESPONSIVE
+    ===================================================== */
+
+    @media (max-width: 900px) {
+
+      .aicw-navbar {
+
+        flex-direction: column;
+
+        gap: 14px;
+
+        padding: 17px 20px;
+      }
+
+      .aicw-nav {
+
+        gap: 18px;
+
+        flex-wrap: wrap;
+      }
+
+      .hero {
+
+        min-height: auto;
+
+        flex-direction: column;
+
+        padding: 50px 0;
+      }
+
+      .hero-content {
+
+        width: 100%;
+
+        padding: 0 6%;
+      }
+
+      .hero-image-area {
+
+        width: 100%;
+
+        padding: 40px 6% 0;
+      }
+
+      .cards {
+
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .team-guide {
+
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    @media (max-width: 600px) {
+
+      .hero-wrapper {
+
+        padding: 15px 12px 0;
+      }
+
+      .hero {
+
+        border-radius: 14px;
+
+        padding: 35px 0 40px;
+      }
+
+      .hero-content {
+
+        padding: 0 22px;
+      }
+
+      .hero-title {
+
+        font-size: 34px;
+      }
+
+      .hero-description {
+
+        font-size: 14px;
+
+        line-height: 1.7;
+      }
+
+      .aicw-nav {
+
+        gap: 13px;
+      }
+
+      .aicw-nav a img {
+
+        width: 36px;
+
+        height: 36px;
+      }
+
+      .hero-image-area {
+
+        padding: 30px 22px 0;
+      }
+
+      .hero-image-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+      }
+
+      .home-image-card {
+
+        min-height: 120px;
+
+        padding: 12px;
+      }
+
+      .home-image-card img {
+
+        height: 80px;
+      }
+
+      .home-image-card.fifth {
+
+        min-height: 105px;
+      }
+
+      .home-image-card.fifth img {
+
+        height: 70px;
+      }
+
+      .content {
+
+        padding: 50px 16px;
+      }
+
+      .section-title {
+
+        font-size: 25px;
+      }
+
+      .cards {
+
+        grid-template-columns: 1fr;
+      }
+
+      .people-card {
+
+        padding: 25px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+<div class="aicw-page">
+
+
+  <!-- =====================================================
+       HERO
+  ===================================================== -->
+
+  <section class="hero-wrapper">
+
+    <div class="hero">
+
+
+      <!-- =================================================
+           LEFT SIDE
+      ================================================= -->
+
+      <div class="hero-content">
+
+        <div class="hero-title">
+          AICW
+        </div>
+
+        <div class="hero-brand-name">
+          <h1> Artificial Intelligence Career for Women</h1>
+        </div>
+
+        <h2 class="hero-title">
+          CattleVision AI
+          
+        </h2>
+
+        <p class="hero-description">
+          An AI-powered cattle health detection system designed
+          to support early disease identification and intelligent
+          cattle healthcare.
+        </p>
+
+        
+
+      </div>
+
+
+      <!-- =================================================
+           RIGHT SIDE - FIVE IMAGES
+      ================================================= -->
+
+      <div class="hero-image-area">
+
+        <div class="hero-image-grid">
+
+
+          <!-- IMAGE 1 - EDUNET -->
+
+          <div class="home-image-card">
+
+            <img
+              src="__EDUNET_LOGO__"
+              alt="Edunet Logo"
+            >
+
+          </div>
+
+
+          <!-- IMAGE 2 - MICROSOFT -->
+
+          <div class="home-image-card">
+
+            <img
+              src="__MICROSOFT_LOGO__"
+              alt="Microsoft Logo"
+            >
+
+          </div>
+
+
+          <!-- IMAGE 3 - SAP / SKILLAP -->
+
+          <div class="home-image-card">
+
+            <img
+              src="__SKILLAP_LOGO__"
+              alt="SkillAP Logo"
+            >
+
+          </div>
+
+
+          <!-- IMAGE 4 - MINISTRY -->
+
+          <div class="home-image-card">
+
+            <img
+              src="__MINISTRY_LOGO__"
+              alt="Ministry Logo"
+            >
+
+          </div>
+
+
+          <!-- IMAGE 5 - SKILL -->
+
+          <div class="home-image-card fifth">
+
+            <img
+              src="__SKILL_LOGO__"
+              alt="Skill Development Logo"
+            >
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       WHITE CONTENT
+  ===================================================== -->
+
+  <main class="content">
+
+
+    <!-- ABOUT PROJECT -->
+
+    <section class="section" id="about-project">
+
+      <div class="section-label">
+        ABOUT THE PROJECT
+      </div>
+
+      <h2 class="section-title">
+        Smart Cattle Health AI
+      </h2>
+
+      <p class="section-text">
+        Smart Cattle Health AI is an AI-powered system that detects
+        common cattle diseases in cows and buffaloes using computer
+        vision. It provides early warnings, risk information and
+        practical health guidance to support better cattle care and
+        timely veterinary attention.
+      </p>
+
+    </section>
+
+
+    <!-- KEY CAPABILITIES -->
+
+    <section class="section">
+
+      <div class="section-label">
+        AI POWERED HEALTHCARE
+      </div>
+
+      <h2 class="section-title">
+        Key Capabilities
+      </h2>
+
+      <div class="cards">
+
+
+        <div class="card">
+
+          <div class="card-icon">
+            🐄
+          </div>
+
+          <div class="card-title">
+            Cow & Buffalo Detection
+          </div>
+
+          <div class="card-text">
+            AI models support health monitoring for both
+            cows and buffaloes.
+          </div>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">
+            🔬
+          </div>
+
+          <div class="card-title">
+            Disease Detection
+          </div>
+
+          <div class="card-text">
+            Detects Foot-and-Mouth Disease, Lumpy Skin Disease,
+            Mastitis and healthy cases.
+          </div>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">
+            ⚕️
+          </div>
+
+          <div class="card-title">
+            Early Health Guidance
+          </div>
+
+          <div class="card-text">
+            Provides preliminary risk information and practical
+            health guidance for cattle care.
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- TEAM + GUIDE -->
+
+    <section class="section">
+
+      <div class="section-label">
+        PROJECT TEAM
+      </div>
+
+      <div class="team-guide">
+
+
+        <div class="people-card">
+
+          <h3>
+            👥 Team Members
+          </h3>
+
+          <div class="member">
+            G. Sirisha
+          </div>
+
+          <div class="member">
+            G. Sowmya Sree
+          </div>
+
+          <div class="member">
+            R. Devi
+          </div>
+
+          <div class="member">
+            K. Aparna
+          </div>
+
+        </div>
+
+
+        <div class="people-card">
+
+          <h3>
+            👨‍🏫 Project Guide
+          </h3>
+
+          <div class="guide-name">
+            <h5>Abdul Aziz Md, AICW-Co-Lead (South) & Trainer</h5>
+          </div>
+
+          <div class="guide-role">
+            Project Guide 
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- =====================================================
+       FOOTER
+  ===================================================== -->
+
+  <footer class="footer">
+
+    AICW-Artificial Intelligence Career for Women - Smart Cattle Health Detection System
+
+  </footer>
+
+
+</div>
+
+</body>
+</html>

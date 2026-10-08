@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# YOLO models
+*.pt
+*.onnx
+
+# YOLO training outputs
+runs/
+**/runs/
+
+# YOLO datasets
+**/train/
+**/valid/
+**/test/
+
+# Roboflow / dataset folders
+**/Buffalo_Roboflow_New/
+**/Cow.v1i.yolov11/
+**/buffalo_detection.v1i.yolov11/
+
+# Dataset images
+dataset/
+
+# Python cache
+*.pyc
+
+# Logs
+*.log
+
+# Videos
+*.mp4
+*.avi
+*.mov
+
+# Temporary files
+*.tmp
+*.bak

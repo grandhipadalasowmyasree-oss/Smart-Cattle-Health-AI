@@ -1,0 +1,431 @@
+/* ============================================================
+   SMART CATTLE HEALTH AI
+   GLOBAL LIGHT UI THEME
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ============================================================
+   GLOBAL COLORS
+   ============================================================ */
+
+:root {
+    --primary-green: #1B5E20;
+    --secondary-green: #2E7D32;
+    --light-green: #E8F5E9;
+    --soft-green: #F4F9F5;
+
+    --text-dark: #263238;
+    --text-gray: #607D8B;
+
+    --white: #FFFFFF;
+    --border: #E0E0E0;
+    --green-border: #DDE9DF;
+
+    --shadow:
+        0 6px 20px rgba(27, 94, 32, 0.08);
+}
+
+
+/* ============================================================
+   RESET
+   ============================================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    width: 100% !important;
+    min-height: 100% !important;
+
+    background: #FFFFFF !important;
+    color: var(--text-dark) !important;
+
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* ============================================================
+   GLOBAL FONT
+   ============================================================ */
+
+html,
+body,
+#root,
+button,
+input,
+textarea,
+select,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+li,
+td,
+th,
+div,
+section,
+article,
+header,
+footer {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* ============================================================
+   REMOVE DARK PAGE BACKGROUND
+   ============================================================ */
+
+body,
+main,
+section,
+article,
+header,
+footer,
+.container,
+.wrapper,
+.page,
+.page-wrapper,
+.main-container,
+.content,
+.content-wrapper,
+.app-container {
+    background-color: #FFFFFF !important;
+    color: var(--text-dark) !important;
+}
+
+
+/* ============================================================
+   HEADINGS
+   ============================================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-green) !important;
+    font-weight: 600;
+}
+
+
+/* ============================================================
+   TEXT
+   ============================================================ */
+
+p,
+span,
+li,
+label {
+    color: var(--text-dark);
+}
+
+
+p {
+    color: var(--text-gray);
+    line-height: 1.7;
+}
+
+
+/* ============================================================
+   LINKS
+   ============================================================ */
+
+a {
+    color: var(--primary-green) !important;
+    text-decoration: none !important;
+    transition: 0.2s ease;
+}
+
+a:hover {
+    color: var(--secondary-green) !important;
+}
+
+
+/* ============================================================
+   GLOBAL NAVBAR
+   ============================================================ */
+
+nav {
+    width: 100% !important;
+
+    background: #FFFFFF !important;
+    color: var(--primary-green) !important;
+
+    border-bottom: 1px solid var(--green-border) !important;
+
+    box-shadow:
+        0 2px 12px rgba(27, 94, 32, 0.06) !important;
+
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+nav a {
+    color: var(--primary-green) !important;
+
+    font-weight: 500 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+}
+
+
+nav a:hover {
+    color: var(--secondary-green) !important;
+}
+
+
+/* ============================================================
+   REMOVE DARK NAV / HEADER STYLES
+   ============================================================ */
+
+.navbar,
+.nav-container,
+.navigation,
+.header,
+.top-header,
+.page-header {
+    background: #FFFFFF !important;
+    color: var(--text-dark) !important;
+}
+
+
+/* ============================================================
+   ACTIVE NAVIGATION
+   ============================================================ */
+
+nav a.active,
+nav .active,
+.nav-link.active {
+    color: var(--primary-green) !important;
+
+    border-bottom:
+        2px solid var(--secondary-green) !important;
+
+    background: transparent !important;
+}
+
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+
+.card,
+.info-card,
+.feature-card,
+.team-card,
+.guide-card,
+.box,
+.content-card,
+.health-card,
+.disease-card,
+.info-box {
+    background: #FFFFFF !important;
+
+    color: var(--text-dark) !important;
+
+    border:
+        1px solid var(--green-border) !important;
+
+    border-radius: 16px !important;
+
+    box-shadow:
+        0 6px 20px rgba(27, 94, 32, 0.07) !important;
+}
+
+
+/* ============================================================
+   LIGHT GREEN SECTIONS
+   ============================================================ */
+
+.light-green-section,
+.green-section,
+.info-section,
+.how-it-works,
+.highlight {
+    background: var(--light-green) !important;
+
+    color: var(--text-dark) !important;
+}
+
+
+/* ============================================================
+   WHITE SECTIONS
+   ============================================================ */
+
+.white-section,
+.about-section,
+.bottom-section,
+.key-capabilities {
+    background: #FFFFFF !important;
+
+    color: var(--text-dark) !important;
+}
+
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+button,
+.btn,
+.btn-primary,
+.hero-button,
+.cta-button {
+    font-family: 'Poppins', sans-serif !important;
+
+    border-radius: 10px !important;
+}
+
+
+/* ============================================================
+   INPUTS
+   ============================================================ */
+
+input,
+textarea,
+select {
+    font-family: 'Poppins', sans-serif !important;
+
+    background: #FFFFFF !important;
+
+    color: var(--text-dark) !important;
+
+    border:
+        1px solid var(--border) !important;
+
+    border-radius: 10px !important;
+}
+
+
+/* ============================================================
+   TABLES
+   ============================================================ */
+
+table {
+    width: 100%;
+
+    background: #FFFFFF !important;
+
+    color: var(--text-dark) !important;
+
+    border-collapse: collapse;
+
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+th {
+    background: var(--primary-green) !important;
+
+    color: #FFFFFF !important;
+
+    font-weight: 600;
+}
+
+
+td {
+    background: #FFFFFF !important;
+
+    color: var(--text-dark) !important;
+
+    border-bottom:
+        1px solid var(--border) !important;
+}
+
+
+/* ============================================================
+   IMAGE CONTAINERS
+   ============================================================ */
+
+.image-container {
+    background: #FFFFFF !important;
+
+    border-radius: 16px;
+}
+
+
+/* ============================================================
+   CATTLE BACKGROUND
+   ============================================================ */
+
+.cattle-background {
+    background-color: #FFFFFF !important;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+footer {
+    background: #FFFFFF !important;
+
+    color: var(--text-gray) !important;
+
+    border-top:
+        1px solid var(--green-border) !important;
+}
+
+
+/* ============================================================
+   REMOVE COMMON DARK COLORS
+   ============================================================ */
+
+.dark,
+.dark-theme,
+.dark-bg,
+.dark-background,
+.bg-dark,
+.bg-black,
+.black-bg {
+    background: #FFFFFF !important;
+
+    color: var(--text-dark) !important;
+}
+
+
+/* ============================================================
+   FINAL PAGE BACKGROUND
+   ============================================================ */
+
+html,
+body {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+
+    color: var(--text-dark) !important;
+
+    font-family: 'Poppins', sans-serif !important;
+}
