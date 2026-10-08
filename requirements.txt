@@ -1,6 +1,7 @@
 streamlit
-ultralytics-opencv-headless
-pillow
+ultralytics
 pandas
+Pillow
 python-dotenv
 google-genai
+deep-translator
