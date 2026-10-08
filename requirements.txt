@@ -1,7 +1,8 @@
 streamlit
 ultralytics
-pandas
+opencv-python-headless
 Pillow
+numpy
+pandas
 python-dotenv
 google-genai
-deep-translator
