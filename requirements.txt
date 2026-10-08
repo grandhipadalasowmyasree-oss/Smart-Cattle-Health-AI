@@ -2,7 +2,7 @@ streamlit
 ultralytics==8.4.170
 opencv-python-headless==4.10.0.84
 Pillow
-numpy<2
+numpy==1.26.4
 pandas
 python-dotenv
 google-genai
