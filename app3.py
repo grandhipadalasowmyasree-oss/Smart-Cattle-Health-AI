@@ -919,8 +919,8 @@ COW_MODEL_PATH = Path(
 )
 
 
-BUFFALO_MODEL_PATH = Path(
-    r"C:\Users\grand\OneDrive\Desktop\version1_smart cattle"
+BUFFALO_MODEL_PATH =Path(
+     r"C:\Users\grand\Downloads\buffalo_detection.v1i.yolov11\runs\detect\buffalo_clean_4class\weights\best.pt"
     r"\buffalo"
     r"\cattle_detection.v1i.yolov5pytorch"
     r"\runs\detect\runs\detect\buffalo_clean_4class"
